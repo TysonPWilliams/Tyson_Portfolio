@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #181823;
 }
 
 .baloo-paaji-2-heading {
@@ -10,21 +11,14 @@
   font-weight: 800;
   font-style: normal;
   
+  
 }
 
 .navigationBar {
-  color: white;  
-  background-color: black;
-    
-}
-
-#header {
   color: white;
-  padding: 1%;
-}
-
-.bodyHeading {
-  margin: 1%;
+  background-color: black;
+  padding: 0;
+    
 }
 
 ul {
@@ -65,4 +59,26 @@ li a:hover {
 
 li:last-child {
   border-right: none;
+}
+
+#nameLeft {
+  float: left;
+  background-color: black;
+}
+
+p {
+  font-size: 30px;
+  color: white;
+}
+
+h2 {
+  display: inline-block;
+  position: relative;
+  bottom: 20vw;
+  left: 60vw;
+  color: #04AA6D;
+  font-size: 150%;
+  border-color: 10px solid white;
+  background-color: ;
+
 }
