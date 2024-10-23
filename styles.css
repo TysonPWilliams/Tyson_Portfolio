@@ -4,14 +4,65 @@
   box-sizing: border-box;
 }
 
-.navigationBar {
-    background-color: black;
-    padding: .2em;
-    letter-spacing: 2px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+.baloo-paaji-2-heading {
+  font-family: "Baloo Paaji 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  
 }
 
-#topLeft {
-    color: white;
-    margin: 5%;
+.navigationBar {
+  color: white;  
+  background-color: black;
+    
+}
+
+#header {
+  color: white;
+  padding: 1%;
+}
+
+.bodyHeading {
+  margin: 1%;
+}
+
+ul {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+  float: right;
+  border-right: 1px solid #bbb;
+  display: inline;
+}
+
+
+li a {
+  display: block;
+  color: white;
+  text-align: right;
+  background-color: #dddddd;
+  text-decoration: none;
+  padding: 20px 30px;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+li:last-child {
+  border-right: none;
 }
