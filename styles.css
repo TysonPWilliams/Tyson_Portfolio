@@ -154,3 +154,41 @@ button:hover {
   }
 
 }
+
+.heroBanner {
+  position: relative;
+  text-align: left;
+  display: inline-block;
+  }
+
+.heroBanner img {
+  width: 40%;
+  margin-right: auto;
+  padding-bottom: 0;
+
+}
+
+.heroBanner h1 {
+  position: absolute;
+  color:#DBD3D3;
+  top: 20%;
+  left: 45%;
+  font-size: 4vw;
+}
+
+h1 span {
+  color: #ec8305;
+}
+
+.philosophyValues {
+  text-align: right;
+  background-color:#ec8305;
+  font-size: 0;
+  line-height: 0;
+}
+
+.philosophyValues img {
+  width: 50vw;
+  height: auto;
+
+}
