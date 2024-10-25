@@ -8,41 +8,66 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&display=swap" rel="stylesheet">
-    <style>
-
-        .mainImage {
-            display: block;
-            margin-left: 0;
-            margin-right: auto;
-            width: 40%;
-        }
-
-        div > p {
-            font-weight: 400;
-            font-size: 1.5rem;
-        }
-
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
 
-    <!-- Here we are creating the main navigation bar-->
-    <div class="baloo-paaji-2-heading" id="nav">
-        <a>Tyson.W</a>
-        <a id="active" href="index.html">Home</a>
-        <a href="contact.html">Contact</a>
-        <a href="about.html">About</a>
-    </div>
+    <header>
+        <img class="logo" src="images/TYSONW logo white.svg" alt="logo">
+        <nav>
+            <ul class="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="#"><button>Contact</button></a>
+    </header>
 
-    <!-- This is the main body of the page-->
-    <img class="mainImage" src="./tysonChicken.jpg" alt="Me holding a chicken">
+
+    <!-- <section> -->
+        
+        <!-- Here we are creating the main navigation bar-->
+        <!--<div class="baloo-paaji-2-heading" id="nav">
+            <a>Tyson.W</a>
+            <a id="active" href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+        </div>
+        -->
+        <!-- This is the main body of the page
+           <img style="width: 50%" mainImage" src="images/tysonChicken.jpg" alt="Me holding a chicken">-->
+    <!--
+        <div>    
+            <h2>I'm Tyson Williams.<br> A Front-End Web<br> Developer based in<br>Australia</h2>
+            <p>Currently studying a Diploma in Web Development, I'm highly passionate about programming and web development. If you have a great project that needs some amazing skills, I'm your guy.</p>
+        </div>
+    </section> 
+    <article>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nemo dicta impedit adipisci quod quibusdam quaerat. Minima, earum exercitationem nulla sint, repellendus cupiditate quis recusandae laboriosam voluptatibus, itaque quo voluptates!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit odit sit itaque reprehenderit nesciunt aliquid possimus adipisci aspernatur explicabo sed. Eveniet voluptatum, optio iusto delectus iure placeat eaque consequatur ea.</p>
+    </article>-->
     
-    <div class="baloo-paaji-2-heading heroHeader">    
-        <h2>I'm Tyson Williams.<br> A Front-End Web<br> Developer based in<br>Australia</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa repellat cupiditate incidunt ratione ullam, veritatis aut sint sunt non voluptatem deserunt ducimus vero voluptatum voluptates harum assumenda?</p>
-    </div>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nemo dicta impedit adipisci quod quibusdam quaerat. Minima, earum exercitationem nulla sint, repellendus cupiditate quis recusandae laboriosam voluptatibus, itaque quo voluptates!</p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit odit sit itaque reprehenderit nesciunt aliquid possimus adipisci aspernatur explicabo sed. Eveniet voluptatum, optio iusto delectus iure placeat eaque consequatur ea.</p>
+    <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-google"></i></a>
+            </div>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <p>Copyright &copy; 2024; Designed by <span class="designer">Tyson.W</span></p>
+        </div>
+    </footer>
 
 </body>
 </html>
