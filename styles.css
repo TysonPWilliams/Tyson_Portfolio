@@ -236,8 +236,14 @@ h1 span {
   background-color:#ec8305;
 
 }
-
+/* Philosophy and values transistion */
+@keyframes slide-in-philosophy {
+  from {
+    transform: translate(400px, 0px);
+  }
+}
 .philosophyValues img {
+  animation: slide-in-philosophy 1s both;
   width: 50vw;
   height: auto;
   box-shadow: -10px 10px 20px 5px rgba(0, 0, 0, 0.5);
