@@ -186,9 +186,8 @@ button:hover {
 }
 
 .heroBanner {
-  position: relative;
-  text-align: left;
-  display: inline-block;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   }
 
 
@@ -201,10 +200,9 @@ button:hover {
 
 .heroBanner img {
   animation: slide-in-photo 1s both;
-  width: 40%;
-  margin-right: auto;
+  width: 100%;
   padding-bottom: 0;
-  box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 10px 0px 20px 0px rgba(0, 0, 0, 0.5);
 
 }
 /* Hero text transistion */
@@ -215,12 +213,18 @@ button:hover {
 }
 .heroBanner h1 {
   animation: slide-in-text 1s both 0.3s;
-  position: absolute;
   color:#DBD3D3;
-  top: 20%;
-  left: 45%;
+  margin: 10%;
+  margin-bottom: 0%;
+  text-align: left;
   font-size: 4vw;
   text-shadow: 19px 10px 20px rgba(0, 0, 0, 0.5);
+}
+.heroBanner p {
+  font-size: 3vw;
+  margin-left: 10%;
+  color: #024CAA;
+  font-weight: 500;
 }
 
 h1 span {
@@ -255,12 +259,28 @@ h1 span {
   padding-top: 10px;
   padding-left: 10px;
   text-align: center;
-  font-size: 3.5vw;
+  font-size: 4vw;
   color: white;
   text-shadow: 19px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 .philosophy1 {
   grid-area: 1 / 2 / 2 / 2;
+  margin-bottom: -10px;
+}
+.philosophy2 p {
+  text-align: center;
+  font-size: 2.5vw;
+  font-weight: 400;
+}
+
+#red {
+  color: red;
+}
+#pink {
+  color: #024CAA;
+}
+#purple {
+  color: purple;
 }
 
