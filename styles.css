@@ -2,284 +2,126 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Baloo Paaji 2", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 800;
+}
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+.poppins-regular {
+  font-family: "Poppins", serif;
+  font-weight: 400;
   font-style: normal;
-  text-decoration: none;
 }
+.poppins-semibold {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+.poppins-bold {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
 
-body {
-  background-color: #091057;
-}
-
-nav {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
-  background: #024CAA;
-  padding: 20px;
-}
-nav .logo, ul, a, .cta {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
- 
-.cta button {
-  margin: 0px;
+.top-nav {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #4ABDAC;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    justify-content: space-between;
 }
 
 .logo {
-  cursor: pointer;
-  width: 20vw;
+    height: 5rem;
+    width: auto;
+    margin: 2px;
 }
 
-.navLinks {
-  list-style: none;
-}
-
-.navLinks li {
-  display: inline-block;
-  padding: 0px 20px;
-}
-
-.navLinks li a {
-  font-size: 4vw;
-  text-shadow: 19px 10px 20px rgba(0, 0, 0, 0.5);
-  color: #DBD3D3;
-  transition: all 0.3s ease 0s;
-}
-
-.navLinks li a:hover {
-  color: #ec8305 ;
-}
-
-button {
-  margin-left: 20px;
-  padding: 9px 25px;
-  background-color: rgba(236, 131, 5, 1);
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-}
-
-button:hover {
-  background-color: rgba(236, 131, 5, 0.8);
-}
-
-.footerContainer {
-  width: 100%;
-  padding: 70px 30px 20px;
-}
-
-.socialIcons {
-  display: flex;
-  justify-content: center;
-}
-
-.socialIcons a {
-  text-decoration: none;
-  padding: 10px 20px;
-  background-color: #DBD3D3;
-  margin: 10px;
-  border-radius: 50%;
-}
-
-.socialIcons a i {
-  font-size: 2rem;
-  color: black;
-}
-
-/*Hover Effects on Social Media Icons */
-.socialIcons a:hover {
-  background-color: rgba(236, 131, 5, 1);
-  transition: 0.5s;
-}
-
-.footerNav {
-  margin: 30px 0;
-}
-
-.footerNav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-}
-
-.footerNav ul li a {
-  color: white;
-  margin: 20px;
-  text-decoration: none;
-  font-size: 1.3em;
-  opacity: 0.4;
-  transition: 0.5s;
-}
-
-.footerNav ul li a:hover {
-  opacity: 1;
-}
-
-.footerBottom {
-  background-color: #000;
-  padding: 20px;
-  text-align: center;
-}
-
-.footerBottom p {
-  color: white;
-}
-
-.designer {
-  opacity: 0.7;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 400;
-  margin: 0px 5px;
-}
-
-/* @media (max-width: 700px) {
-  
-  nav {
-    flex-direction: column;
-  }
-
-  nav ul li{
-    text-align: center;
-    width: 100px;
-    left: 50vw;
-    margin-right: auto;
-  }
-  
-  .footerNav ul {
-    flex-direction: column;
-  }
-
-  .footerNav ul {
-    width: 100px;
-    text-align: center;
-    margin: auto;
-  }
-
-} */
-
-/* Tablet */
-@media screen and (min-width: 481px) and (max-width: 999px) {
-  .navLinks li a {
-    font-size: 1.5em;
-  }
-}
-
-/* Desktop */
-@media screen and (min-width: 1000px) {
-  .navLinks li a {
-    font-size: 1.5em;
-  }
-  .navLinks {
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    flex-direction: row;
-  }
-
+    justify-content: center;
 }
 
-.heroBanner {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  }
-
-
-/* Main image transistion */
-@keyframes slide-in-photo {
-  from {
-    transform: translate(-400px, 0px);
-  }
+nav li {
+    margin: 0 10px;
 }
 
-.heroBanner img {
-  animation: slide-in-photo 1s both;
-  width: 100%;
-  padding-bottom: 0;
-  box-shadow: 10px 0px 20px 0px rgba(0, 0, 0, 0.5);
-
-}
-/* Hero text transistion */
-@keyframes slide-in-text {
-  from {
-    transform: translate(500px, 0px);
-  }
-}
-.heroBanner h1 {
-  animation: slide-in-text 1s both 0.3s;
-  color:#DBD3D3;
-  margin: 10%;
-  margin-bottom: 0%;
-  text-align: left;
-  font-size: 4vw;
-  text-shadow: 19px 10px 20px rgba(0, 0, 0, 0.5);
-}
-.heroBanner p {
-  font-size: 3vw;
-  margin-left: 10%;
-  color: #024CAA;
-  font-weight: 500;
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
 }
 
-h1 span {
-  color: #ec8305;
+nav a:hover {
+    color: #FC4A1A;
 }
 
-.philosophyValues {
-  
-  margin-top:-9px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-  background-color:#ec8305;
-
-}
-/* Philosophy and values transistion */
-@keyframes slide-in-philosophy {
-  from {
-    transform: translate(400px, 0px);
-  }
-}
-.philosophyValues img {
-  animation: slide-in-philosophy 1s both;
-  width: 50vw;
-  height: auto;
-  box-shadow: -10px 10px 20px 5px rgba(0, 0, 0, 0.5);
-  grid-column-start: 1;
-
+.contact-now {
+    background-color: #F7B733;
+    color: white;
 }
 
-.philosophyValues div h2 {
-  padding-top: 10px;
-  padding-left: 10px;
-  text-align: center;
-  font-size: 4vw;
+.contact-now:hover {
+    color: white;
+    background-color: #FC4A1A
+}
+
+#background-video {
+  position: fixed; /* Stay in place during scroll */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover; /* Cover the entire viewport */
+  z-index: -1; /* Place behind other content */
+}
+
+.content {
+  position: relative; /* Allow content to overlay the video */
+  z-index: 1; /* Bring content above the video */
+  padding: 20px;
+  color: white; /* Example text color */
+  text-align: center; /* Example text alignment */
+}
+
+.hero-heading {
+  padding-top: 25vh;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.main-heading {
+  font-size: 4rem;
+}
+
+.sub-heading {
+  font-size: 2rem;
+}
+
+.hero-heading p {
+  padding-top: 5%;
+  padding-left: calc(100%/5);
+  padding-right: calc(100%/5);
+  font-size: 1rem;
+}
+
+#hero-contact-button {
+  font-size: 1.5rem;
+  margin: 10px;
   color: white;
-  text-shadow: 19px 10px 20px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
 }
-
-.philosophy1 {
-  grid-area: 1 / 2 / 2 / 2;
-  margin-bottom: -10px;
-}
-.philosophy2 p {
-  text-align: center;
-  font-size: 2.5vw;
-  font-weight: 400;
-}
-
-#red {
-  color: red;
-}
-#pink {
-  color: #024CAA;
-}
-#purple {
-  color: purple;
-}
-
