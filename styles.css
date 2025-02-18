@@ -156,20 +156,13 @@ nav a:hover {
   background-color: #000;
   border: 1px solid #000;
 }
+
 #front-page-background {
   position: relative;
   width: 100%;
-  height: auto;
-  overflow: hidden;
+  min-height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#front-page-background {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow: hidden;
@@ -185,53 +178,67 @@ nav a:hover {
   z-index: -1; /* Sends the background behind everything */
 }
 
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns */
-  grid-template-rows: repeat(2, 1fr); /* 2 rows */
-  gap: 20px; /* Space between images */
-  position: relative; /* Ensures it stays over the background */
-  z-index: 1; /* Brings the grid above the background */
-}
 .flip-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+  width: 100%;
   position: relative;
-  width: 45vw;
-  height: 200px;
-  object-fit: cover;
-  perspective: 1000px;
+  padding: 5vw;
 }
 .flip-box {
-  width: 80%;
-  height: 80%;
+  position: relative;
+  width: 90%;
+  padding-top: 56.2%;
   /* position: absolute; */
   transform-style: preserve-3d;
   transition: transform 0.6s ease-in-out;
 }
 .front, .back {
   position: absolute;
+  top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
   backface-visibility: hidden;
   background-size: cover;
   background-position: center;
 }
-.front1 {
+.front {
   background-image: url('./images/LMS-API.png');
 }
-.back1 {
-  background-image: url('./images/sunrise.jpg');
+.back {
+  background-image: url('./images/LMS-code.png');
   transform: rotateY(180deg);
 }
-.front2 {
-  background-image: url('./images/texture_background.jpg');
-}
-.back2 {
-  background-image: url('./images/tyson_bw.jpg');
-  transform: rotateY(180deg);
-}
-
 .flip-box:hover {
   transform: rotateY(180deg);
+}
+.flip-container .flip-box:nth-child(2) .front {
+  background-image: url('./images/LMS-API.png'); /* Front image 2 */
+}
+
+.flip-container .flip-box:nth-child(2) .back {
+  background-image: url('./images/sunrise.jpg'); /* Back image 2 */
+}
+
+/* Grid item 3 */
+.flip-container .flip-box:nth-child(3) .front {
+  background-image: url('./images/LMS-API.png'); /* Front image 3 */
+}
+
+.flip-container .flip-box:nth-child(3) .back {
+  background-image: url('./images/sunrise.jpg'); /* Back image 3 */
+}
+
+/* Grid item 4 */
+.flip-container .flip-box:nth-child(4) .front {
+  background-image: url('./images/LMS-API.png'); /* Front image 4 */
+}
+
+.flip-container .flip-box:nth-child(4) .back {
+  background-image: url('./images/sunrise.jpg'); /* Back image 4 */
 }
 
 /* .project-grid img Y
