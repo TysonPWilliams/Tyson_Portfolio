@@ -5,7 +5,6 @@
 }
 html, body {
     height: 100%;
-    overflow: hidden;
 }
 
 .poppins-regular {
@@ -24,8 +23,8 @@ html, body {
     font-style: normal;
   }
 
-.top-nav {
-    width: 80%;
+/* .top-nav {
+    /* width: 80%;
     margin: 20px auto;
     background-color: #4ABDAC;
     border-radius: 20px;
@@ -35,7 +34,25 @@ html, body {
     align-items: center;
     padding: 0 20px;
     justify-content: space-between;
+} */
+.top-nav {
+  margin-top: 1%;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  background-color: #4ABDAC;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  justify-content: space-between;
+  z-index: 1000; /* Ensures it stays above other content */
 }
+
 
 .logo {
     height: 5rem;
@@ -77,51 +94,63 @@ nav a:hover {
     color: white;
     background-color: #FC4A1A
 }
-
+.background-video {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
 #background-video {
-  position: fixed; /* Stay in place during scroll */
+  position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover; /* Cover the entire viewport */
-  z-index: -1; /* Place behind other content */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
-
-.content {
-  position: relative; /* Allow content to overlay the video */
-  z-index: 1; /* Bring content above the video */
-  padding: 20px;
-  color: white; /* Example text color */
-  text-align: center; /* Example text alignment */
+.hero-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  text-align: center;
+  color: white;
+}
+.hero-container img {
+  max-width: 30vw;
+  border-radius: 50%;
 }
 
 .hero-heading {
-  padding-top: 25vh;
+  flex: 1;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
 }
 
 .main-heading {
-  font-size: 4rem;
+  font-size: 3vw;
 }
 
 .sub-heading {
-  font-size: 2rem;
-}
-
-.hero-heading p {
-  padding-top: 5%;
-  padding-left: calc(100%/5);
-  padding-right: calc(100%/5);
-  font-size: 1rem;
+  font-size: 1.5vw;
 }
 
 #hero-contact-button {
   font-size: 1.5rem;
-  margin: 10px;
+  margin-top: 2vh;
   color: white;
   text-decoration: none;
   padding: 10px 15px;
   transition: background-color 0.3s ease;
   border-radius: 5px;
+  border: none;
+  cursor: pointer;
 }
