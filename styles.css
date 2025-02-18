@@ -193,16 +193,56 @@ nav a:hover {
   position: relative; /* Ensures it stays over the background */
   z-index: 1; /* Brings the grid above the background */
 }
+.flip-container {
+  position: relative;
+  width: 45vw;
+  height: 200px;
+  object-fit: cover;
+  perspective: 1000px;
+}
+.flip-box {
+  width: 80%;
+  height: 80%;
+  /* position: absolute; */
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease-in-out;
+}
+.front, .back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  background-size: cover;
+  background-position: center;
+}
+.front1 {
+  background-image: url('./images/LMS-API.png');
+}
+.back1 {
+  background-image: url('./images/sunrise.jpg');
+  transform: rotateY(180deg);
+}
+.front2 {
+  background-image: url('./images/texture_background.jpg');
+}
+.back2 {
+  background-image: url('./images/tyson_bw.jpg');
+  transform: rotateY(180deg);
+}
 
-.project-grid img {
-  width: 100%; /* Makes sure images scale within the grid */
-  max-width: 90%; /* Adjust size as needed */
+.flip-box:hover {
+  transform: rotateY(180deg);
+}
+
+/* .project-grid img Y
+  width: 100%; 
+  max-width: 90%; 
   height: auto;
-  border-radius: 10px; /* Optional: Adds rounded corners */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a soft shadow */
+  border-radius: 10px; 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
   margin:5%;
 }
 .project-grid img:hover {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.1);
-}
+} */
