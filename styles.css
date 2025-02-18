@@ -23,18 +23,6 @@ html, body {
     font-style: normal;
   }
 
-/* .top-nav {
-    /* width: 80%;
-    margin: 20px auto;
-    background-color: #4ABDAC;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-    justify-content: space-between;
-} */
 .top-nav {
   margin-top: 1%;
   position: fixed;
@@ -42,7 +30,7 @@ html, body {
   left: 50%;
   transform: translateX(-50%);
   width: 80%;
-  background-color: #4ABDAC;
+  background-color: #A80F00;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -52,7 +40,6 @@ html, body {
   justify-content: space-between;
   z-index: 1000; /* Ensures it stays above other content */
 }
-
 
 .logo {
     height: 5rem;
@@ -82,18 +69,24 @@ nav a {
 }
 
 nav a:hover {
-    color: #FC4A1A;
+    color: #FFC4C7;
 }
 
 .contact-now {
-    background-color: #F7B733;
-    color: white;
+    /* background-color: #F7B733; */
+    background-color: #FFC4C7;
+    color: black;
 }
 
 .contact-now:hover {
     color: white;
-    background-color: #FC4A1A
+    background-color: rgba(0,0,0,0.5);
 }
+.hero-contact-now {
+  background-color: #A80F00;
+  color:#FFC4C7;
+}
+
 .background-video {
   position: relative;
   width: 100%;
@@ -106,14 +99,12 @@ nav a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit:fill;
   z-index: -1;
 }
 .hero-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  /* transform: translate(-50%, -50%); */
+  margin: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -146,11 +137,72 @@ nav a:hover {
 #hero-contact-button {
   font-size: 1.5rem;
   margin-top: 2vh;
-  color: white;
+  background-color: #FFC4C7;
+  color: black;
   text-decoration: none;
   padding: 10px 15px;
   transition: background-color 0.3s ease;
   border-radius: 5px;
   border: none;
   cursor: pointer;
+}
+#hero-contact-button:hover {
+  background-color:#A80F00;
+  color: white;
+}
+
+#border-line {
+  padding-top: 1rem;
+  background-color: #000;
+  border: 1px solid #000;
+}
+#front-page-background {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#front-page-background {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Sends the background behind everything */
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-template-rows: repeat(2, 1fr); /* 2 rows */
+  gap: 20px; /* Space between images */
+  position: relative; /* Ensures it stays over the background */
+  z-index: 1; /* Brings the grid above the background */
+}
+
+.project-grid img {
+  width: 100%; /* Makes sure images scale within the grid */
+  max-width: 90%; /* Adjust size as needed */
+  height: auto;
+  border-radius: 10px; /* Optional: Adds rounded corners */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a soft shadow */
+  margin:5%;
+}
+.project-grid img:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.1);
 }
