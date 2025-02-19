@@ -22,6 +22,11 @@ html, body {
     font-weight: 700;
     font-style: normal;
   }
+  .yesteryear {
+    font-family: "Yesteryear", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 
 .top-nav {
   margin-top: 1%;
@@ -30,17 +35,36 @@ html, body {
   left: 50%;
   transform: translateX(-50%);
   width: 80%;
-  background-color: #A80F00;
+  background-color: rgba(168,15,0,0.5);
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
   display: flex;
   align-items: center;
   padding: 0 20px;
   justify-content: space-between;
   z-index: 1000; /* Ensures it stays above other content */
 }
-
+.bottom-nav {
+  margin-bottom: 1%;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20%;
+  background-color: rgba(168,15,0,0.6);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  justify-content: center;
+  z-index: 1000; /* Ensures it stays above other content */
+}
+.bottom-nav a:hover {
+  color: rgba(0,0,0,0.5);
+}
 .logo {
     height: 5rem;
     width: auto;
@@ -112,9 +136,11 @@ nav a:hover {
   text-align: center;
   color: white;
 }
+
 .hero-container img {
   max-width: 30vw;
   border-radius: 50%;
+  box-shadow: 0 0 15px 5px rgba(158,15,0,0.8);
 }
 
 .hero-heading {
@@ -177,6 +203,22 @@ nav a:hover {
   object-fit: cover;
   z-index: -1; /* Sends the background behind everything */
 }
+.projects-heading {
+  background-image: url('./images/projects-heading.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 30vw;
+  height: 100px;
+  margin: 5% auto 0px auto;
+  transition: width 0.5s ease, height 0.5s ease, filter 0.3s ease;
+  filter: brightness(1.2) contrast(1.5) saturate(400%) hue-rotate(-180deg);;
+}
+.projects-heading:hover {
+  filter:hue-rotate(0deg);
+  width: 35vw;
+  height: 120px;
+}
 
 .flip-container {
   display: grid;
@@ -194,6 +236,20 @@ nav a:hover {
   /* position: absolute; */
   transform-style: preserve-3d;
   transition: transform 0.6s ease-in-out;
+}
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.project-title {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #6CD2ED;
+  text-transform: uppercase;
+  text-shadow: 2px 4px 2px #000;
 }
 .front, .back {
   position: absolute;
@@ -215,32 +271,83 @@ nav a:hover {
 .flip-box:hover {
   transform: rotateY(180deg);
 }
-.flip-container .flip-box:nth-child(2) .front {
-  background-image: url('./images/LMS-API.png'); /* Front image 2 */
+.flip-container .project:nth-child(2) .front {
+  background-image: url('./images/Up_bank_API.png'); /* Front image 2 */
 }
 
-.flip-container .flip-box:nth-child(2) .back {
-  background-image: url('./images/sunrise.jpg'); /* Back image 2 */
+.flip-container .project:nth-child(2) .back {
+  background-image: url('./images/in-progress.png'); /* Back image 2 */
 }
 
 /* Grid item 3 */
-.flip-container .flip-box:nth-child(3) .front {
-  background-image: url('./images/LMS-API.png'); /* Front image 3 */
+.flip-container .project:nth-child(3) .front {
+  background-image: url('./images/postgresql-image.png'); /* Front image 3 */
 }
 
-.flip-container .flip-box:nth-child(3) .back {
-  background-image: url('./images/sunrise.jpg'); /* Back image 3 */
+.flip-container .project:nth-child(3) .back {
+  background-image: url('./images/postgresql-code.png'); /* Back image 3 */
 }
 
 /* Grid item 4 */
-.flip-container .flip-box:nth-child(4) .front {
-  background-image: url('./images/LMS-API.png'); /* Front image 4 */
+.flip-container .project:nth-child(4) .front {
+  background-image: url('./images/finance-tracking-app.png'); /* Front image 4 */
 }
 
-.flip-container .flip-box:nth-child(4) .back {
-  background-image: url('./images/sunrise.jpg'); /* Back image 4 */
+.flip-container .project:nth-child(4) .back {
+  background-image: url('./images/finance-program-code.png'); /* Back image 4 */
+}
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+.text-flex {
+  display: flex;
+  flex-direction: column;
+  height: 75vh;
+  justify-content: center;
+  margin: 0 25%;
+}
+@keyframes glowing-text {
+  0% { text-shadow: 0 0 8px rgba(255, 105, 180, 0.8); }
+  50% { text-shadow: 0 0 16px rgba(255, 20, 147, 0.6), 0 0 24px rgba(75, 0, 130, 0.5); }
+  100% { text-shadow: 0 0 8px rgba(255, 105, 180, 0.8); }
+}
+@keyframes glowing-border {
+  0% { box-shadow: 0 0 10px rgba(255, 105, 180, 0.8), 0 0 20px rgba(255, 20, 147, 0.6); }
+  50% { box-shadow: 0 0 20px rgba(255, 20, 147, 0.8), 0 0 30px rgba(75, 0, 130, 0.6); }
+  100% { box-shadow: 0 0 10px rgba(255, 105, 180, 0.8), 0 0 20px rgba(255, 20, 147, 0.6); }
+}
+#profile-pic {
+  position: relative;
+  background-image: url('./images/tyson_bw.jpg');
+  width: 50%;
+  height: 57.5%;
+  border-radius: 50%;
+  background-size: cover;
+  animation: glowing-border 2s infinite alternate;
 }
 
+#about-me-heading {
+  font-size: 2rem;
+  color: #FFFFFF; /* Neon blue text color */
+  text-shadow: 0 0 5px #00FFFF, 0 0 10px #00FFFF, 0 0 15px #0088FF, 0 0 20px #0044FF;
+}
+
+
+#about-me-heading span {
+  font-size: 4rem;
+  padding-left: 3%;
+  background: linear-gradient(90deg, skyblue, blue, purple, hotpink, pink, salmon);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: glowing-text 2s infinite alternate;
+}
+
+/* #about-section {
+  background-color: #FFC4C7;
+} */
 /* .project-grid img Y
   width: 100%; 
   max-width: 90%; 
@@ -253,3 +360,11 @@ nav a:hover {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.1);
 } */
+
+.footerBottom {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 1.5rem;
+  padding-bottom: 4%;
+}
