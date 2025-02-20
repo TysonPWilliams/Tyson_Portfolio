@@ -66,7 +66,7 @@ html, body {
   color: rgba(0,0,0,0.5);
 }
 .logo {
-    height: 5rem;
+    height: 5vw;
     width: auto;
     margin: 2px;
 }
@@ -113,8 +113,8 @@ nav a:hover {
 
 .background-video {
   position: relative;
-  width: 100%;
-  height: 100vh;
+  width: 100vw;
+  aspect-ratio: 2 / 1;
   overflow: hidden;
 }
 #background-video {
@@ -299,15 +299,14 @@ nav a:hover {
 .about-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
-  align-items: center;
+  place-items: center;
 }
 .text-flex {
   display: flex;
   flex-direction: column;
   height: 75vh;
   justify-content: center;
-  margin: 0 25%;
+  margin: 0 5% 0 20%;
 }
 @keyframes glowing-text {
   0% { text-shadow: 0 0 8px rgba(255, 105, 180, 0.8); }
@@ -322,27 +321,34 @@ nav a:hover {
 #profile-pic {
   position: relative;
   background-image: url('./images/tyson_bw.jpg');
-  width: 50%;
-  height: 57.5%;
+  width: 40%;
+  aspect-ratio: 1 / 1;
   border-radius: 50%;
   background-size: cover;
+  background-position: center;
   animation: glowing-border 2s infinite alternate;
 }
-
+#about-me {
+  font-size: 1.5vw;
+}
 #about-me-heading {
-  font-size: 2rem;
+  font-size: 2.5vw;
   color: #FFFFFF; /* Neon blue text color */
   text-shadow: 0 0 5px #00FFFF, 0 0 10px #00FFFF, 0 0 15px #0088FF, 0 0 20px #0044FF;
 }
 
-
 #about-me-heading span {
-  font-size: 4rem;
+  font-size: 5vw;
   padding-left: 3%;
   background: linear-gradient(90deg, skyblue, blue, purple, hotpink, pink, salmon);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: glowing-text 2s infinite alternate;
+}
+
+#about-section p {
+  margin-top: 2vh;
+  font-size: 1rem;
 }
 
 /* #about-section {
@@ -368,3 +374,31 @@ nav a:hover {
   font-size: 1.5rem;
   padding-bottom: 4%;
 }
+
+@media screen and (max-width: 1080px){
+  
+  .top-nav {
+    margin-top: 1%;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    padding: 0 5vw;
+  }
+    .hero-container {
+    margin: 15vh;
+  }
+
+  nav a {
+    font-size: 1.5vw;
+  }
+
+  #hero-contact-button {
+    font-size: 1rem;
+
+  }
+
+
+}
+  
