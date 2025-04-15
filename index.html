@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,103 +8,175 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Google Font - Poppins and Raleway below -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yesteryear&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Yesteryear&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/a832878e7f.js" crossorigin="anonymous"></script>
+    <script defer async src="./script.js"></script>    
 </head>
+
 <body>
-    <nav class="top-nav">
-        <div class="logo-container">
-            <img src="images/TYSONW logo white.svg" alt="Tyson W Logo" class="logo">
-        </div>
-        <ul class="poppins-regular">
-            <li><a href="#">Home</a></li>
-            <li><a href="#projects-section">Projects</a></li>
-            <li><a href="#about-section">About</a></li>
-        </ul>
-        <a href="#" class="contact-now poppins-semibold">Contact Now</a>
-    </nav>
-
-    <nav class="bottom-nav">
-        <ul>
-            <li><a href="https://github.com/TysonPWilliams"><i class="fa-brands fa-github fa-2xl"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/tyson-williams-13273760/"><i class="fa-brands fa-linkedin fa-2xl"></i></a></li>
-            <li><a href="mailto:tyson.williams95@gmail.com"><i class="fa-solid fa-envelope fa-2xl"></i></a></li>
-        </ul>
-    </nav>
-    
-
-    <div class="background-video">
-        <video autoplay muted loop id="background-video">
-            <source src="videos/code.mp4" type="video/mp4">
-        </video>
-        <div class="hero-container glass-container">
-            <img src="images/tyson_bw.jpg">
-            <div class="glass-overlay"></div>
-            <div class="hero-heading">
-                <h1 class="main-heading poppins-semibold">Turning Ideas into Interactive Web Experiences</h1>
-                <h3 class="sub-heading poppins-regular">Hi, I'm Tyson. A developer passionate in full-stack web development</h3>
-                <button class="hero-contact-now poppins-semibold" id="hero-contact-button">Contact Now</button>
-            </div>
-        </div>
+  <nav class="top-nav">
+    <div class="logo-container">
+      <img src="images/TYSONW logo white.svg" alt="Tyson W Logo" class="logo">
     </div>
-    <div id="projects-section"></div>
-    <div id="border-line"></div>
-    <div id="front-page-background"> 
-        <img class="background-image" src="images/texture_background.jpg" alt="Grey textured background">
-        <div class="projects-heading"></div>
-        <div class="flip-container">
-            <div class="project">
-                <div class="flip-box">
-                    <a href="https://github.com/TysonPWilliams/oct24-build-an-api" class="front"></a>
-                    <a href="https://github.com/TysonPWilliams/oct24-build-an-api" class="back"></a>
-                </div>
-                <h3 class="project-title poppins-semibold">Learning Management System - API</h3>
-            </div>
-            <div class="project">
-                <div class="flip-box">
-                    <a href="#" class="front"></a>
-                    <a href="#" class="back"></a>
-                </div>
-                <h3 class="project-title poppins-semibold">Business Income Tracking App</h3>
-            </div>
-            <div class="project">
-                <div class="flip-box">
-                    <a href="https://github.com/TysonPWilliams/database-scripts-assessment" class="front"></a>
-                    <a href="https://github.com/TysonPWilliams/database-scripts-assessment" class="back"></a>
-                </div>
-                <h3 class="project-title poppins-semibold">PostgreSQL Scripts</h3>
-            </div>
-            <div class="project">
-                <div class="flip-box">
-                    <a href="https://github.com/TysonPWilliams/DEV1001-programmingportfolio" class="front"></a>
-                    <a href="https://github.com/TysonPWilliams/DEV1001-programmingportfolio" class="back"></a>
-                </div>
-                <h3 class="project-title poppins-semibold">Finance Tracking App</h3>
-            </div>          
-        </div>
-    </div>
-    <div id="border-line"></div>
+    <ul class="poppins-regular">
+      <li><a href="#">Home</a></li>
+      <li><a href="#projects-section">Projects</a></li>
+      <li><a href="#about-section">About</a></li>
+    </ul>
+    <a href="#" class="contact-now poppins-semibold">Contact Now</a>
+  </nav>
 
-    <!-- ABOUT US SECTION -->
-    <div id="about-section" class="about-container">
-        <div class="text-flex">
-            <h3 class="poppins-semibold" id="about-me">About Me</h3>
-            <h3 class="poppins-semibold" id="about-me-heading">Full-Stack Developer and a little bit of <span class="yesteryear">everything</span></h3>
-            <p class="poppins-regular">I'm Tyson Williams, a proactive full-stack developer passionate about creating dynamic web experiences. From frontend and backend, I thrive on solving complex problems with clean, efficient code. My expertise spans JavaScript, Python, PostgreSQL, HTML and CSS, and I'm always eager to learn more.</p>
-            <p class="poppins-regular">When I'm not coding, I'm exploring new ideas and staying curious. Life's about balance, and I love embracing every part of it.</p>
-            <p class="poppins-regular">I believe in waking up each day eager to make a difference!</p>
-        </div>
-        <div id="profile-pic"></div>
-    </div>
+  <nav class="bottom-nav">
+    <ul>
+      <li><a href="https://github.com/TysonPWilliams"><i class="fa-brands fa-github fa-2xl"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/tyson-williams-13273760/"><i
+            class="fa-brands fa-linkedin fa-2xl"></i></a></li>
+      <li><a href="mailto:tyson.williams95@gmail.com"><i class="fa-solid fa-envelope fa-2xl"></i></a></li>
+    </ul>
+  </nav>
 
-    <!-- FOOTER -->
-    <footer>
-        <div class="footerBottom">
-            <p class="poppins-regular">Copyright &copy; 2025; Designed by <span class="designer">Tyson.W</span></p>
+  <div class="background-video">
+    <video autoplay muted loop id="background-video">
+      <source src="videos/code.mp4" type="video/mp4">
+    </video>
+    <div class="hero-container glass-container">
+      <img src="images/tyson_bw.jpg">
+      <div class="glass-overlay"></div>
+      <div class="hero-heading">
+        <h1 class="main-heading poppins-semibold">Turning Ideas into Interactive Web Experiences</h1>
+        <h3 class="sub-heading poppins-regular">Hi, I'm Tyson. A developer passionate in full-stack web development</h3>
+        <button class="hero-contact-now poppins-semibold" id="hero-contact-button">Contact Now</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="border-line"></div>
+
+  <section id="problem-solution">
+    <div id="problem-solution-container">
+      <div class="problem-solution-tile hidden delay-1" id="problem">
+        <h2 class="poppins-semibold">🛑 PROBLEM DETECTED</h2>
+        <p class="poppins-regular">
+          You don’t have a website — or your current one isn't doing its job. 
+          When people search for your business, they find nothing. Or worse, a clunky, outdated site.
+        </p>
+      </div>
+      <div class="problem-solution-tile hidden delay-2" id="agitate">
+        <h2 class="poppins-semibold">⚠️ ESCALATION</h2>
+        <p class="poppins-regular">
+            When people search for your business, they find... nothing. Or they land on a site that’s slow, outdated, and doesn’t work on mobile. First impressions matter — and your online presence is killing potential sales.
+        </p>
+        <p class="poppins-regular">
+            You’ve probably tried DIY builders, but they’re time-consuming, confusing, and never look how you imagined. Hiring a big agency? Out of budget.
+        </p>
+        <p class="poppins-regular">    
+            And so, you stay stuck — while competitors get ahead.
+        </p>
         </div>
-    </footer>
+      <div class="problem-solution-tile hidden delay-3" id="solution">
+        <h2 class="poppins-semibold">✅ SOLUTION DEPLOYED</h2>
+        <p class="poppins-regular">
+            I’m Tyson, and I create clean, high-performing websites that turn browsers into buyers.
+
+            Whether you need a brand-new website or a total refresh, I’ll handle everything — from design and development to launch and support. No jargon, no stress — just results that grow your business.        
+        </p>
+        <button class="glitch-btn" onclick="window.location.href='#about-section'" data-text="Launch Solution">Launch Solution</button>
+      </div>
+    </div>
+  </section>
+  <div id="projects-section"></div>
+  
+
+  <div id="front-page-background">
+    <img class="background-image" src="images/texture_background.jpg" alt="Grey textured background">
+    <div class="projects-heading"></div> <!-- This is an image-->
+
+    <!-- <div class="flip-container">
+
+      <div class="project">
+        <div class="flip-box" id="flip-box-1">
+          <div class="flip-inner">
+            <div class="front">
+              <p>Click Me!</p>
+            </div>
+            <div class="back">
+              <a href="https://github.com/TysonPWilliams/oct24-build-an-api" target="_blank">Visit Project</a>
+            </div>
+          </div>
+        </div>
+        <h3 class="project-title poppins-semibold">Learning Management System - API</h3>
+      </div>
+
+      <div class="project">
+        <div class="flip-box">
+          <div class="flip-inner">
+            <div class="front">
+              <p>Click Me!</p>
+            </div>
+            <div class="back">
+              <a href="#">Visit Project</a>
+            </div>
+          </div>
+        </div>
+        <h3 class="project-title poppins-semibold">Business Income Tracking App</h3>
+      </div>
+
+      <div class="project">
+        <div class="flip-box">
+          <div class="flip-inner">
+            <div class="front">
+              <p>Click Me!</p>
+            </div>
+            <div class="back">
+              <a href="https://github.com/TysonPWilliams/database-scripts-assessment" target="_blank">Visit Project</a>
+            </div>
+          </div>
+        </div>
+        <h3 class="project-title poppins-semibold">PostgreSQL Scripts</h3>
+      </div>
+
+      <div class="project">
+        <div class="flip-box">
+          <div class="flip-inner">
+            <div class="front">
+              <p>Click Me!</p>
+            </div>
+            <div class="back">
+              <a href="https://github.com/TysonPWilliams/DEV1001-programmingportfolio" target="_blank">Visit Project</a>
+            </div>
+          </div>
+        </div>
+        <h3 class="project-title poppins-semibold">Finance Tracking App</h3>
+      </div>
+
+    </div> -->
+  </div>
+
+  <div id="border-line"></div>
+
+  <div id="about-section" class="about-container">
+    <div class="text-flex">
+      <h3 class="poppins-semibold" id="about-me">About Me</h3>
+      <h3 class="poppins-semibold" id="about-me-heading">Full-Stack Developer and a little bit of <span
+          class="yesteryear">everything</span></h3>
+      <p class="poppins-regular">I'm Tyson Williams, a proactive full-stack developer passionate about creating dynamic
+        web experiences. From frontend and backend, I thrive on solving complex problems with clean, efficient code. My
+        expertise spans JavaScript, Python, PostgreSQL, HTML and CSS, and I'm always eager to learn more.</p>
+      <p class="poppins-regular">When I'm not coding, I'm exploring new ideas and staying curious. Life's about
+        balance, and I love embracing every part of it.</p>
+      <p class="poppins-regular">I believe in waking up each day eager to make a difference!</p>
+    </div>
+    <div id="profile-pic"></div>
+  </div>
+
+  <footer>
+    <div class="footerBottom">
+      <p class="poppins-regular">Copyright &copy; 2025; Designed by <span class="designer">Tyson.W</span></p>
+    </div>
+  </footer>
+  
 </body>
+
 </html>
