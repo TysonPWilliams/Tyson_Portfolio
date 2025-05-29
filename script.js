@@ -62,19 +62,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Add click handlers for social links
-    document.querySelectorAll('.contact-method').forEach(method => {
-        method.addEventListener('click', function() {
-            const icon = this.querySelector('i');
-            if (icon.classList.contains('fa-envelope')) {
-                window.location.href = 'mailto:tyson.williams95@gmail.com';
-            } else if (icon.classList.contains('fa-linkedin')) {
-                window.open('https://www.linkedin.com/in/tysonpwilliams/', '_blank');
-            } else if (icon.classList.contains('fa-github')) {
-                window.open('https://github.com/TysonPWilliams', '_blank');
-            }
-        });
-    });
 
     // Notification system
     function showNotification(message, type = 'info') {
