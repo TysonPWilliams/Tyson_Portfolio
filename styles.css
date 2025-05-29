@@ -1904,14 +1904,31 @@ footer {
   border-radius: 10px;
   border: 1px solid rgba(108, 210, 237, 0.2);
   transition: all 0.3s ease;
-  text-decoration: none;
-  color: inherit;
+  text-decoration: none !important;
+  color: inherit !important;
   cursor: pointer;
 }
 
 .contact-method:hover {
   background: rgba(108, 210, 237, 0.2);
   transform: translateX(10px);
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+.contact-method:visited {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+.contact-method:link {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+.contact-method:active {
+  text-decoration: none !important;
+  color: inherit !important;
 }
 
 .contact-method i {
