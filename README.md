@@ -4,7 +4,7 @@ A modern, responsive portfolio website showcasing my skills as a Full-Stack Web 
 
 ## 🚀 Live Demo
 
-Visit the live portfolio: [tysonwilliams.dev](https://tysonwilliams.dev) *(Update with your actual domain)*
+Visit the live portfolio: [tysonwilliams.dev](https://tysonwilliams.dev)
 
 ## 🛠️ Technologies Used
 
@@ -12,7 +12,7 @@ Visit the live portfolio: [tysonwilliams.dev](https://tysonwilliams.dev) *(Updat
 - **Styling**: Custom CSS with CSS Grid, Flexbox, and CSS Animations
 - **Icons**: Font Awesome
 - **Fonts**: Google Fonts (Poppins, Yesteryear)
-- **Design**: Responsive design with mobile-first approach
+- **Design**: Responsive design with a mobile-first approach
 
 ## ✨ Features
 
@@ -34,42 +34,11 @@ Visit the live portfolio: [tysonwilliams.dev](https://tysonwilliams.dev) *(Updat
 
 ## 🎯 Projects Showcased
 
+- **SatoshiFund P2P Bitcoin Lender**: Node.js, React, MongoDB
 - **Learning Management System API**: Node.js, Express, PostgreSQL
 - **Personal Finance Tracker**: Python, Tkinter, SQLite
 - **Database Management Scripts**: PostgreSQL, SQL
 - **Banking API Integration**: JavaScript, REST API
-
-## 🚀 Getting Started
-
-### Prerequisites
-- Modern web browser
-- Local web server (optional, for development)
-
-### Installation
-
-1. Clone the repository:
-```bash
-git clone https://github.com/TysonPWilliams/Tyson_Portfolio.git
-```
-
-2. Navigate to the project directory:
-```bash
-cd Tyson_Portfolio
-```
-
-3. Open `index.html` in your browser or serve with a local server:
-```bash
-# Using Python
-python -m http.server 8000
-
-# Using Node.js (if you have http-server installed)
-npx http-server
-
-# Using PHP
-php -S localhost:8000
-```
-
-4. Visit `http://localhost:8000` in your browser
 
 ## 📁 Project Structure
 
@@ -100,20 +69,6 @@ Tyson_Portfolio/
 - **Email**: tyson.williams95@gmail.com
 - **LinkedIn**: [Tyson Williams](https://www.linkedin.com/in/tyson-williams-13273760/)
 - **GitHub**: [TysonPWilliams](https://github.com/TysonPWilliams)
-
-## 🤝 Contributing
-
-While this is a personal portfolio, I welcome feedback and suggestions! Feel free to:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/improvement`)
-3. Commit your changes (`git commit -am 'Add some improvement'`)
-4. Push to the branch (`git push origin feature/improvement`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
 
 ## 🙏 Acknowledgments
 
