@@ -35,6 +35,47 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
+    // Navigation scroll animation with inertia
+    let isScrolling = false;
+    let scrollTimeout;
+    const topNav = document.querySelector('.top-nav');
+    const bottomNav = document.querySelector('.bottom-nav');
+
+    function hideNavBars() {
+        if (topNav) {
+            topNav.classList.add('nav-hidden');
+        }
+        if (bottomNav) {
+            bottomNav.classList.add('nav-hidden');
+        }
+        isScrolling = true;
+    }
+
+    function showNavBars() {
+        if (topNav) {
+            topNav.classList.remove('nav-hidden');
+        }
+        if (bottomNav) {
+            bottomNav.classList.remove('nav-hidden');
+        }
+        isScrolling = false;
+    }
+
+    window.addEventListener('scroll', () => {
+        // Hide nav bars when scrolling starts
+        if (!isScrolling) {
+            hideNavBars();
+        }
+
+        // Clear the timeout if it exists
+        clearTimeout(scrollTimeout);
+
+        // Set a timeout to show nav bars when scrolling stops
+        scrollTimeout = setTimeout(() => {
+            showNavBars();
+        }, 150); // Show after 150ms of no scrolling
+    });
+
     // Contact form handling
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
@@ -61,7 +102,6 @@ document.addEventListener("DOMContentLoaded", () => {
             this.reset();
         });
     }
-
 
     // Notification system
     function showNotification(message, type = 'info') {
