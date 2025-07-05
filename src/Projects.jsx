@@ -4,7 +4,7 @@ import "./Projects.css";
 const projects = [
   {
     title: "SatoshiFund P2P Bitcoin Lending",
-    image: "old-portfolio/images/satoshiFund-min.png",
+    image: "/satoshiFund-min.png",
     tech: ["JavaScript", "React", "Node.js", "Mongoose", "Express"],
     description: "A decentralized peer-to-peer Bitcoin lending platform with smart contracts, real-time trading, and secure wallet integration.",
     links: [
@@ -14,7 +14,7 @@ const projects = [
   },
   {
     title: "Learning Management System API",
-    image: "old-portfolio/images/LMS-API.png",
+    image: "/LMS-API.png",
     tech: ["Node.js", "Express", "PostgreSQL"],
     description: "A comprehensive RESTful API for managing courses, students, and enrollments with full CRUD operations.",
     links: [
@@ -24,7 +24,7 @@ const projects = [
   },
   {
     title: "Personal Finance Tracker",
-    image: "old-portfolio/images/finance-tracking-app.png",
+    image: "/finance-tracking-app.png",
     tech: ["Python", "Tkinter", "SQLite"],
     description: "Desktop application for tracking income, expenses, and generating financial reports with data visualization.",
     links: [
@@ -34,7 +34,7 @@ const projects = [
   },
   {
     title: "PostgreSQL Scripts",
-    image: "old-portfolio/images/postgresql-image.png",
+    image: "/postgresql-image.png",
     tech: ["PostgreSQL", "SQL", "Database Design"],
     description: "Collection of advanced SQL scripts for database management, optimization, and complex data analysis queries.",
     links: [
