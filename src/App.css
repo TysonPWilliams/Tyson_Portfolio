@@ -176,7 +176,7 @@ main {
         max-width: 98vw;
         padding: 1rem 0.5rem;
         margin-top: -12rem;
-        margin-bottom: 0.5rem !important;
+        margin-bottom: -10vw !important;
     }
     .navbar {
         flex-direction: row;
