@@ -150,6 +150,33 @@ main {
     background: #005fcc;
 }
 
+.blog-code-image {
+    margin: 1.2rem 0;
+    text-align: center;
+}
+
+.blog-code-image img {
+    max-width: 95%;
+    border-radius: 0.7rem;
+    box-shadow: 0 2px 12px rgba(34, 197, 94, 0.10);
+    border: 1.5px solid var(--glass-border);
+}
+
+.blog-code-caption {
+    font-size: 0.98rem;
+    color: #b8c5d6;
+    margin-top: 0.4rem;
+    font-style: italic;
+}
+
+.blog-date {
+    font-size: 0.9rem;
+    color: #9c9c9c;
+    margin-bottom: 1rem;
+    display: block;
+  }
+  
+
 @media (max-width: 768px) {
     .navbar {
         padding: 1rem;
@@ -180,6 +207,7 @@ main {
         margin-top: -12rem;
         margin-bottom: -10vw !important;
     }
+
     .navbar {
         flex-direction: row;
         justify-content: center;
@@ -339,5 +367,89 @@ main {
 @media (min-width: 701px) {
     .hamburger {
         display: none !important;
+    }
+}
+
+.blog-section {
+    background: var(--glass-bg);
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 32px rgba(0, 0, 0, 0.18);
+    max-width: 800px;
+    margin: 2.5rem auto 3rem auto;
+    padding: 2.5rem 2rem 2.5rem 2rem;
+    border: 1.5px solid var(--glass-border);
+    color: #f3f6fa;
+    font-size: 1.08rem;
+    line-height: 1.7;
+}
+
+.blog-section h2 {
+    font-size: 2.2rem;
+    color: var(--accent-green);
+    margin-bottom: 0.7rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.blog-section h3 {
+    color: var(--accent-green-light);
+    margin-top: 2.2rem;
+    margin-bottom: 0.7rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.blog-section p {
+    margin-bottom: 1.1rem;
+    text-align: left;
+}
+
+.blog-section ul {
+    margin: 0 0 1.2rem 1.5rem;
+    padding: 0;
+    list-style: disc inside;
+}
+
+.blog-section li {
+    margin-bottom: 0.5rem;
+}
+
+.blog-section blockquote {
+    background: rgba(34, 197, 94, 0.08);
+    border-left: 4px solid var(--accent-green);
+    margin: 1.5rem 0;
+    padding: 1rem 1.5rem;
+    font-style: italic;
+    color: #b8c5d6;
+    border-radius: 0.7rem;
+}
+
+.blog-section a {
+    color: var(--accent-green-light);
+    text-decoration: underline;
+    word-break: break-all;
+}
+
+.blog-section code {
+    background: #23272f;
+    color: var(--accent-green-light);
+    padding: 0.15em 0.4em;
+    border-radius: 0.3em;
+    font-size: 0.98em;
+}
+
+@media (max-width: 700px) {
+    .blog-section {
+        max-width: 99vw;
+        padding: 1.2rem 0.5rem;
+        font-size: 0.98rem;
+    }
+
+    .blog-section h2 {
+        font-size: 1.3rem;
+    }
+
+    .blog-section h3 {
+        font-size: 1.05rem;
     }
 }
