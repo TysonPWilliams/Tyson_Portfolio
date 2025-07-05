@@ -45,8 +45,7 @@ const Hero = () => {
             Hi, I'm <span className="hero-name">Tyson Williams</span>
             <br />
             <span className="hero-cycling">
-              Full Stack <span className="cycling-word">{displayed}</span>
-              <span className="hero-cursor">|</span>
+              Full Stack <span className="cycling-word">{displayed}<span className="hero-cursor">|</span></span>
             </span>
           </h1>
           <p className="hero-subtitle">

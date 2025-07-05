@@ -87,6 +87,12 @@
   color: var(--accent-green);
   font-weight: 800;
   font-size: 1.5rem;
+  animation: blink-cursor 0.5s steps(2, start) infinite;
+}
+
+@keyframes blink-cursor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
 
 .hero-subtitle {
