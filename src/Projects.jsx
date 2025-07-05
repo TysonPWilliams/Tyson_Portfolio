@@ -15,21 +15,20 @@ const projects = [
   {
     title: "Learning Management System API",
     image: "/LMS-API.png",
-    tech: ["Node.js", "Express", "PostgreSQL"],
+    tech: ["Python", "Flask", "SQLAlchemy", "Marshmallow"],
     description: "A comprehensive RESTful API for managing courses, students, and enrollments with full CRUD operations.",
     links: [
-      { label: "View Code", url: "https://github.com/TysonPWilliams/oct24-build-an-api" },
-      { label: "Live Demo", url: "#" }
+      { label: "View Code", url: "https://github.com/TysonPWilliams/oct24-build-an-api" }
+      
     ]
   },
   {
-    title: "Personal Finance Tracker",
-    image: "/finance-tracking-app.png",
-    tech: ["Python", "Tkinter", "SQLite"],
-    description: "Desktop application for tracking income, expenses, and generating financial reports with data visualization.",
+    title: "Student Grading Backend",
+    image: "/grading.jpg",
+    tech: ["JavaScript", "Express", "Mongoose"],
+    description: "Student Grading system for teachers/assessors to use with RESTful routes",
     links: [
-      { label: "View Code", url: "https://github.com/TysonPWilliams/DEV1001-programmingportfolio" },
-      { label: "Screenshots", url: "#" }
+      { label: "View Code", url: "https://github.com/TysonPWilliams/student-grading-backend" }
     ]
   },
   {
@@ -38,8 +37,7 @@ const projects = [
     tech: ["PostgreSQL", "SQL", "Database Design"],
     description: "Collection of advanced SQL scripts for database management, optimization, and complex data analysis queries.",
     links: [
-      { label: "View Code", url: "https://github.com/TysonPWilliams/database-scripts-assessment" },
-      { label: "Documentation", url: "#" }
+      { label: "View Code", url: "https://github.com/TysonPWilliams/database-scripts-assessment" }
     ]
   }
 ];

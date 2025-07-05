@@ -1,6 +1,5 @@
 import React from "react";
 import Hero from "./Hero";
-import ProblemSolution from "./ProblemSolution";
 import Projects from "./Projects";
 import About from "./About";
 import Contact from "./Contact";
@@ -23,13 +22,12 @@ function App() {
       </nav>
       <main>
         <Hero />
-        {/* <ProblemSolution /> */}
         <Projects />
         <About />
         <Contact />
       </main>
       <footer className="footer">
-        <p>Copyright &copy; 2025; Designed by <span className="designer">Tyson.W</span></p>
+        <p>Copyright &copy; 2025; Designed by <a href="https://www.tysonwilliams.dev"><img src="/TYSONW logo white.svg" alt="TysonW Logo" className="logo-img footer-logo" /></a></p>
       </footer>
     </div>
   );

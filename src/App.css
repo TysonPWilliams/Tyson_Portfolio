@@ -176,3 +176,10 @@ main {
     height: 30px;
   }
 }
+
+.footer-logo {
+  height: 5rem;
+  width: auto;
+  vertical-align: middle;
+  margin-left: 0.3em;
+}
