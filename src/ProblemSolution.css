@@ -1,0 +1,98 @@
+.problem-solution-section {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+.problem-solution-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.problem-solution-tile {
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.problem-solution-tile::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #ff6b6b, #4ecdc4, #45b7d1);
+}
+
+.problem-solution-tile:nth-child(1)::before {
+  background: linear-gradient(90deg, #ff6b6b, #ee5a52);
+}
+
+.problem-solution-tile:nth-child(2)::before {
+  background: linear-gradient(90deg, #feca57, #ff9ff3);
+}
+
+.problem-solution-tile:nth-child(3)::before {
+  background: linear-gradient(90deg, #48dbfb, #0abde3);
+}
+
+.problem-solution-tile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.problem-solution-tile h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #2d3748;
+}
+
+.problem-solution-tile p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #4a5568;
+  margin-bottom: 1rem;
+}
+
+.problem-solution-tile p:last-child {
+  margin-bottom: 0;
+}
+
+.solution-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #0077ff, #00d4ff);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 119, 255, 0.3);
+}
+
+.solution-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 119, 255, 0.4);
+}
+
+@media (max-width: 768px) {
+  .problem-solution-container {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+  
+  .problem-solution-tile {
+    padding: 2rem;
+  }
+} 
