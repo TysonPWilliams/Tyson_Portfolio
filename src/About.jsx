@@ -11,7 +11,7 @@ const About = () => (
         <p>When I'm not coding, I'm exploring new ideas and staying curious. Life's about balance, and I love embracing every part of it.</p>
         <p>I believe in waking up each day eager to make a difference!</p>
       </div>
-      <img src="old-portfolio/images/tyson_bw.jpg" alt="Tyson Williams" className="about-profile" />
+      <img src="/tyson_bw.jpg" alt="Tyson Williams" className="about-profile" />
     </div>
   </section>
 );
