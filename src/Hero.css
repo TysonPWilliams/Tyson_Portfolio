@@ -193,6 +193,9 @@
   .hero-buttons {
     flex-direction: column;
     gap: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     margin-top: 1rem;
   }
