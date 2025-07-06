@@ -40,9 +40,19 @@ const Blog = () => (
     <h3>Ethical Implications of AI-Generated Code</h3>
     <p>The integration of AI into code generation raises several ethical concerns that developers and organisations must address:</p>
     <ul>
-      <li><strong>Intellectual Property and Plagiarism:</strong> AI models trained on vast code repositories may inadvertently reproduce copyrighted code without proper attribution, leading to potential legal issues. For instance, GitHub Copilot has been observed generating code snippets that closely resemble existing open-source projects, sometimes without preserving original license information.</li>
-      <li><strong>Transparency and Accountability:</strong> When AI-generated code leads to errors or vulnerabilities, determining responsibility becomes complex. The lack of transparency in how AI models make decisions further complicates accountability.</li>
-      <li><strong>Bias and Fairness:</strong> AI tools may perpetuate existing biases present in their training data, leading to unfair or discriminatory outcomes in software applications.</li>
+      <li>
+        <strong>Intellectual Property and Plagiarism:</strong> AI models trained on vast code repositories may inadvertently reproduce copyrighted code without proper attribution, leading to 
+        potential legal issues. For instance, GitHub Copilot has been observed generating code snippets that closely resemble existing open-source projects, sometimes without preserving 
+        original license information. (Davis & Rajamanickam, 2022)
+      </li>
+      <li>
+        <strong>Transparency and Accountability:</strong> When AI-generated code leads to errors or vulnerabilities, determining responsibility becomes complex. The lack of transparency in 
+        how AI models make decisions further complicates accountability.
+      </li>
+      <li>
+        <strong>Bias and Fairness:</strong> AI tools may perpetuate existing biases present in their training data, leading to unfair or discriminatory outcomes in software applications.
+        (BytePlus Editorial Team, 2025)
+      </li>
     </ul>
     <p><strong>To navigate these ethical challenges, developers should:</strong></p>
     <ul>
@@ -61,7 +71,7 @@ const Blog = () => (
     <p>
       Over a few days, using a spare few hours here and there, I was able to write my program; however, with one prompt, it took AI a mere 30 seconds. I then
       used AI to compare my human-written code with the AI-generated code, and AI made a harsh assessment of its work. Below are the summarised results (full
-      results can be found on my <a href="https://github.com/TysonPWilliams/ISK1002-Article-Assignment">GitHub</a>:</p>
+      results can be found on my <a href="https://github.com/TysonPWilliams/ISK1002-Article-Assignment">GitHub</a>):</p>
 
     <p><strong>Results:</strong></p>
     <ul>
@@ -99,6 +109,7 @@ const Blog = () => (
       <img src="/ai-schema.png" alt="AI-Generated Code" />
       <div className="blog-code-caption">Fig 4. AI-generated Schema Example</div>
     </div>
+
     <h3>Key Findings and Recommendations</h3>
     <ol>
       <li><strong>Security Gap:</strong> The AI-generated code lacks essential security measures, making it unsuitable for production use without significant modifications</li>
