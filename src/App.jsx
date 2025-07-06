@@ -15,7 +15,7 @@ function App() {
       <div className="container">
         <nav className="navbar">
           <div className="logo">
-            <img src="/TYSONW logo white.svg" alt="Tyson W Logo" className="logo-img" />
+            <a href="https://tysonwilliams.dev"><img src="/TYSONW logo white.svg" alt="Tyson W Logo" className="logo-img"/></a>
           </div>
           <button
             className="hamburger"

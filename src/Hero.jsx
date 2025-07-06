@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Hero.css";
+import { HashLink } from "react-router-hash-link";
 
 const words = ["Developer", "Engineer", "Architect"];
 
@@ -52,8 +53,8 @@ const Hero = () => {
             Full-stack developer with a background in entrepreneurship and media, passionate about building innovative, user-focused solutions using technologies like React.js, Node.js, and Python.
           </p>
           <div className="hero-buttons">
-            <a href="#projects-section" className="hero-btn-modern primary">View Projects →</a>
-            <a href="#contact-section" className="hero-btn-modern secondary">Contact Me →</a>
+            <HashLink smooth to="#projects-section" className="hero-btn-modern primary">View Projects →</HashLink>
+            <HashLink smooth to="#contact-section" className="hero-btn-modern secondary">Contact Me →</HashLink>
           </div>
         </div>
       </section>
