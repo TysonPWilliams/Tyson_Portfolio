@@ -3,7 +3,7 @@ import "./Contact.css";
 
 const Contact = () => (
   <div className="centered-section">
-    <section className="contact-section" id="contact-section">
+    <section className="contact-section scroll-offset" id="contact-section">
       <div className="contact-content-modern">
         <div className="contact-badge">Get In Touch</div>
         <div className="contact-info-modern">

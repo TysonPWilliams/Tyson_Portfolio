@@ -6,12 +6,14 @@ import Projects from "./Projects";
 import About from "./About";
 import Contact from "./Contact";
 import Blog from "./Blog";
+import ScrollToTop from "./ScrollToTop";
 import "./App.css";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <Router>
+      <ScrollToTop />
       <div className="container">
         <nav className="navbar">
           <div className="logo">
