@@ -41,12 +41,12 @@ const Blog = () => (
     <p>The integration of AI into code generation raises several ethical concerns that developers and organisations must address:</p>
     <ul>
       <li>
-        <strong>Intellectual Property and Plagiarism:</strong> AI models trained on vast code repositories may inadvertently reproduce copyrighted code without proper attribution, leading to 
-        potential legal issues. For instance, GitHub Copilot has been observed generating code snippets that closely resemble existing open-source projects, sometimes without preserving 
+        <strong>Intellectual Property and Plagiarism:</strong> AI models trained on vast code repositories may inadvertently reproduce copyrighted code without proper attribution, leading to
+        potential legal issues. For instance, GitHub Copilot has been observed generating code snippets that closely resemble existing open-source projects, sometimes without preserving
         original license information. (Davis & Rajamanickam, 2022)
       </li>
       <li>
-        <strong>Transparency and Accountability:</strong> When AI-generated code leads to errors or vulnerabilities, determining responsibility becomes complex. The lack of transparency in 
+        <strong>Transparency and Accountability:</strong> When AI-generated code leads to errors or vulnerabilities, determining responsibility becomes complex. The lack of transparency in
         how AI models make decisions further complicates accountability.
       </li>
       <li>
@@ -82,11 +82,13 @@ const Blog = () => (
           <li>Professional Docs: Top-tier README, setup guides, API examples</li>
           <li>Developer-Friendly: Modular structure, version control, dev tools</li>
         </ul>
-        <div className="blog-code-image">
-          <img src="/human-code-snippet.png" alt="Human-Written Code" />
-          <div className="blog-code-caption">Fig 1. Human-Written Student Routes Snippet</div>
-        </div>
       </li>
+    </ul>
+      <div className="blog-code-image">
+        <img src="/human-code-snippet.png" alt="Human-Written Code" />
+        <div className="blog-code-caption">Fig 1. Human-Written Student Routes Snippet</div>
+      </div>
+    <ul>
       <li><strong>AI-Generated API:</strong> Pass Level (72%)
         <ul>
           <li>Works, but Barebones: Functional CRUD, basic Express structure</li>
@@ -94,12 +96,13 @@ const Blog = () => (
           <li>Inconsistent & Dated: CommonJS, minimal validation, lacks error handling</li>
           <li>Docs Lack Depth: Basic setup, missing real-world guidance</li>
         </ul>
-        <div className="blog-code-image">
-          <img src="/ai-generated-snippet.png" alt="AI-Generated Code" />
-          <div className="blog-code-caption">Fig 2. AI-Generated Student Routes Snippet</div>
-        </div>
       </li>
     </ul>
+    <div className="blog-code-image">
+      <img src="/ai-generated-snippet.png" alt="AI-Generated Code" />
+      <div className="blog-code-caption">Fig 2. AI-Generated Student Routes Snippet</div>
+    </div>
+
     <p>Below are snippets of my own schema and validation compared to AI</p>
     <div className="blog-code-image">
       <img src="/human-schema.png" alt="Human-Written Code" />
@@ -161,7 +164,7 @@ const Blog = () => (
       <p>AI can be a helpful assistant, but it can’t replace the value of struggling through a problem, getting stuck, and finally figuring it out. That process builds real developer skills, the kind no model can give you.</p>
     </blockquote>
     <p>
-      In short, AI is a tool, not a replacement for thinking. If used thoughtfully, it can boost your productivity and even help you learn. But if you rely on it too heavily, you risk 
+      In short, AI is a tool, not a replacement for thinking. If used thoughtfully, it can boost your productivity and even help you learn. But if you rely on it too heavily, you risk
       becoming a passive copy-paster rather than an active problem-solver. And in this industry, <em>understanding</em> always trumps <em>speed.</em></p>
 
     <h3>References</h3>
@@ -175,7 +178,7 @@ const Blog = () => (
     </ul>
     <p><em>Thanks for reading! If you have thoughts or experiences with AI-generated code, please reach out via the contact form below</em></p>
     <Contact />
-  </section>
+  </section >
 );
 
 export default Blog; 

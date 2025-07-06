@@ -448,7 +448,7 @@ section[id] {
 
 @media (max-width: 700px) {
     .blog-section {
-        max-width: 99vw;
+        max-width: 85vw;
         padding: 1.2rem 0.5rem;
         font-size: 0.98rem;
         margin-top: -1rem;
