@@ -291,7 +291,7 @@ main {
 
     main {
         margin-top: 80px;
-        padding: 0 0.5rem;
+        padding: 0 0;
     }
 
     .footer {
@@ -347,7 +347,7 @@ main {
     }
 
     body {
-        max-width: 95vw;
+        max-width: 100vw;
         display: flex;
         justify-content: center;
         align-items: center;
