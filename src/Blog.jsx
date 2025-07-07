@@ -14,7 +14,7 @@ const posts = [
     title: "Saying Goodbye to Windows, Hello to Linux Mint!",
     slug: "switching-to-linux-mint",
     image: "/linux-mint.jpg",
-    date: ""
+    date: "July, 7, 2025"
   }
 ]
 

@@ -1,11 +1,12 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import aiPost from "./posts/post1";
+import linuxPost from "./posts/post2";
 import './Blog.css'
 
 const postMap = {
     "ai-vs-human-code": aiPost,
-    // "switching-to-linux-code": linuxPost
+    "switching-to-linux-mint": linuxPost
 }
 
 const BlogPost = () => {

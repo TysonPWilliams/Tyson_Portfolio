@@ -5,7 +5,7 @@ import "../Blog.css"
 const aiPost = {
     title: "Can We Trust AI to Write Our Code? A Developer's Perspective",
     author: "Tyson Williams",
-    date: "July, 7, 2025",
+    date: "July, 5, 2025",
     content: (
         <>
             <p>AI tools such as ChatGPT and GitHub Copilot are revolutionising software and web development. With the ability to generate entire code blocks from prompts, these tools promise faster development cycles and fewer bugs. But at what cost?</p>
