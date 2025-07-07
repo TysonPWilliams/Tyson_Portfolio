@@ -50,7 +50,7 @@ const Hero = () => {
             </span>
           </h1>
           <p className="hero-subtitle">
-            Full-stack developer with a background in entrepreneurship and media, passionate about building innovative, user-focused solutions using technologies like React.js, Node.js, and Python.
+            Full-stack developer with a background in entrepreneurship and marketing, passionate about building innovative, user-focused solutions using technologies like React.js, Node.js, and Python.
           </p>
           <div className="hero-buttons">
             <HashLink smooth to="#projects-section" className="hero-btn-modern primary">View Projects →</HashLink>
