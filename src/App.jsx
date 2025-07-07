@@ -8,6 +8,7 @@ import Contact from "./Contact";
 import Blog from "./Blog";
 import BlogPost from "./BlogPost"
 import ScrollToTop from "./ScrollToTop";
+import ScrollToTopButton from "./ScrollToTopButton";
 import "./App.css";
 
 function App() {
@@ -65,11 +66,14 @@ function App() {
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
           </Routes>
+          <ScrollToTopButton />
         </main>
+        
         <footer className="footer">
           <p>Copyright &copy; 2025; Designed by <a href="https://www.tysonwilliams.dev"><img src="/TYSONW logo white.svg" alt="TysonW Logo" className="logo-img footer-logo" /></a></p>
         </footer>
       </div>
+      
     </Router>
   );
 }
