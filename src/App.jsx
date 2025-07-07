@@ -6,6 +6,7 @@ import Projects from "./Projects";
 import About from "./About";
 import Contact from "./Contact";
 import Blog from "./Blog";
+import BlogPost from "./BlogPost"
 import ScrollToTop from "./ScrollToTop";
 import "./App.css";
 
@@ -62,6 +63,7 @@ function App() {
               }
             />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
           </Routes>
         </main>
         <footer className="footer">
