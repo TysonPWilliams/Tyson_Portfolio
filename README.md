@@ -1,12 +1,45 @@
-# React + Vite
+# Tyson Williams – Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio website, built to showcase my web development projects, blog posts, and technical skills. This site is built using modern front-end technologies with a sleek glassmorphism UI, smooth scrolling, and mobile responsiveness.
 
-Currently, two official plugins are available:
+## 🌐 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[https://tysonwilliams.dev](https://tysonwilliams.dev)
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Smooth scrolling navigation
+- Responsive layout (mobile-first)
+- Blog with individual post pages
+- Scroll-to-top button
+- React Router navigation
+- Dynamic project and blog post rendering
+- Glassmorphism-inspired design
+- SEO-friendly structure
+
+## 🛠 Tech Stack
+
+- **Framework:** React
+- **Routing:** React Router DOM (`HashRouter`)
+- **Styling:** CSS3 with custom variables and animations
+- **Scroll effects:** hash-link and custom scroll handlers
+- **Deployment:** GitHub Pages (via `gh-pages`)
+
+
+## 📦 Installation & Development
+
+### Prerequisites
+
+- Node.js (v18 or above)
+- npm
+
+
+## 🖊️ Author
+
+### Tyson Williams
+
+Full Stack Web Developer
+
+[Website](https://tysonwilliams.dev) | [GitHub](https://github.com/TysonPWilliams) | [LinkedIn](https://linkedin.com/TysonPWilliams)
+
+
