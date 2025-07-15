@@ -32,12 +32,22 @@ const projects = [
     ]
   },
   {
-    title: "PostgreSQL Scripts",
-    image: "/postgresql-image.png",
-    tech: ["PostgreSQL", "SQL", "Database Design"],
-    description: "Collection of advanced SQL scripts for database management, optimization, and complex data analysis queries.",
+    title: "Containerised Backend API",
+    image: "/satoshi_docker.png",
+    tech: ["Docker", "Docker Compose", "Express", "JavaScript"],
+    description: "A backend API built with Express and fully containerised using Docker and Docker Compose. Features clean architecture, versioned images, and a production-ready Docker setup.",
     links: [
-      { label: "View Code", url: "https://github.com/TysonPWilliams/database-scripts-assessment" }
+      { label: "View Code", url: "https://github.com/TysonPWilliams/MERN-Project-Backend" },
+      { label: "Architecture Diagram", url: "https://github.com/TysonPWilliams/MERN-Project-Backend/blob/main/docs/Cloud_Architecture_Diagram.png"}
+    ]
+  },
+  {
+    title: "Coastal Crete Website",
+    image: "/coastal-crete-screenshot.png",
+    tech: ["React", "Vite", "JavaScript", "HTML", "CSS"],
+    description: "A modern, responsive business website designed and developed for a concreting service. Deployed via GitHub Pages.",
+    links: [
+      { label: "View Site", url: "https://tysonpwilliams.github.io/coastal-crete-website/" }
     ]
   }
 ];
