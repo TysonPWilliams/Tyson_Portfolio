@@ -1,5 +1,6 @@
 import React from "react";
 import "./Projects.css";
+import { HashLink } from "react-router-hash-link";
 
 const projects = [
   {
@@ -19,7 +20,7 @@ const projects = [
     description: "A comprehensive RESTful API for managing courses, students, and enrollments with full CRUD operations.",
     links: [
       { label: "View Code", url: "https://github.com/TysonPWilliams/oct24-build-an-api" }
-      
+
     ]
   },
   {
@@ -38,7 +39,7 @@ const projects = [
     description: "A backend API built with Express and fully containerised using Docker and Docker Compose. Features clean architecture, versioned images, and a production-ready Docker setup.",
     links: [
       { label: "View Code", url: "https://github.com/TysonPWilliams/MERN-Project-Backend" },
-      { label: "Architecture Diagram", url: "https://github.com/TysonPWilliams/MERN-Project-Backend/blob/main/docs/Cloud_Architecture_Diagram.png"}
+      { label: "Architecture Diagram", url: "https://github.com/TysonPWilliams/MERN-Project-Backend/blob/main/docs/Cloud_Architecture_Diagram.png" }
     ]
   },
   {
@@ -49,7 +50,17 @@ const projects = [
     links: [
       { label: "View Site", url: "https://tysonpwilliams.github.io/coastal-crete-website/" }
     ]
+  },
+  {
+    title: "Your Project Here",
+    image: "/project-placeholder.png", // a mockup or icon
+    tech: ["Web Design", "Development", "Collaboration"],
+    description: "Ready to bring your idea to life? Let’s build it together.",
+    links: [
+      { label: "Let's Talk", url: "#contact-section", isInternal: true } // or link to a booking form, email, or chat widget
+    ]
   }
+
 ];
 
 const Projects = () => (
@@ -67,7 +78,26 @@ const Projects = () => (
           <p>{project.description}</p>
           <div className="project-links">
             {project.links.map((link, i) => (
-              <a href={link.url} target="_blank" rel="noopener noreferrer" className={i === 0 ? "btn-primary" : "btn-secondary"} key={i}>{link.label}</a>
+              link.isInternal ? (
+                <HashLink
+                  to={link.url}
+                  smooth
+                  className={i === 0 ? "btn-primary" : "btn-secondary"}
+                  key={i}
+                >
+                  {link.label}
+                </HashLink>
+              ) : (
+                <a
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={i === 0 ? "btn-primary" : "btn-secondary"}
+                  key={i}
+                >
+                  {link.label}
+                </a>
+              )
             ))}
           </div>
         </div>
