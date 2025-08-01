@@ -48,7 +48,7 @@ const projects = [
     tech: ["React", "Vite", "JavaScript", "HTML", "CSS"],
     description: "A modern, responsive business website designed and developed for a concreting service. Deployed via GitHub Pages.",
     links: [
-      { label: "View Site", url: "https://tysonpwilliams.github.io/coastal-crete-website/" }
+      { label: "View Site", url: "https://coastalcrete.net/" }
     ]
   },
   {
